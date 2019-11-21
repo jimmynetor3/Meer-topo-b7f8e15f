@@ -11,16 +11,16 @@ $arraytest = array();
 for ($i=0; $i < $landen ; $i++) { 
 	$land = readline("noem een land" . PHP_EOL);
     $stad = readline("noem zijn hoofdstad" . PHP_EOL);
-    array_push($arraytest, array(
+    $arraytest = array_merge($arraytest, array(
     	$land => $stad,
     ));
 }
-
-foreach ($arraytest as $topo) {
-	foreach ($topo as $land => $stad) {
-			echo($land . ' ' . $stad . PHP_EOL);
-	}
-};
+echo(var_dump($arraytest));
+// foreach ($arraytest as $topo) {
+// 	foreach ($topo as $land => $stad) {
+// 			echo($land . ' ' . $stad . PHP_EOL);
+// 	}
+// };
 
 
   ?>
