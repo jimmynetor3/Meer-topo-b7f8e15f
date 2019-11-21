@@ -15,12 +15,9 @@ for ($i=0; $i < $landen ; $i++) {
     	$land => $stad,
     ));
 }
-echo(var_dump($arraytest));
-// foreach ($arraytest as $topo) {
-// 	foreach ($topo as $land => $stad) {
-// 			echo($land . ' ' . $stad . PHP_EOL);
-// 	}
-// };
+foreach ($arraytest as $land => $stad) {
+		echo($land . ' ' . $stad . PHP_EOL);
+}
 
 
   ?>
